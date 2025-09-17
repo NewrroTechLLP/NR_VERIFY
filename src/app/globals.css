@@ -1,27 +1,29 @@
+/* src/app/globals.css */
+
+/* Light Mode Variables */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-color: #f0f2f5;
+  --bg-secondary-color: #ffffff;
+  --text-color-primary: #1c1e21;
+  --text-color-secondary: #606770;
+  --accent-color: #0062E6; /* A professional blue for light mode */
+  --accent-text-color: #ffffff;
+  --border-color: #ccd0d5;
+  --verified-color: #31a24c;
+  --fraud-color: #e41e3f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Dark Mode Variables */
+[data-theme='dark'] {
+  --bg-color: #0a192f;
+  --bg-secondary-color: #112240;
+  --text-color-primary: #e6f1ff;
+  --text-color-secondary: #a8b2d1;
+  --accent-color: #64ffda; /* Your original green accent for dark mode */
+  --accent-text-color: #0a192f;
+  --border-color: #a8b2d1;
+  --verified-color: #64ffda;
+  --fraud-color: #ff8a8a;
 }
 
 * {
@@ -30,13 +32,9 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color-secondary);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
+/* ... rest of the file can be removed or adapted */
