@@ -52,6 +52,30 @@ const mockDatabase = [
     status: 'Active',
     startDate: '06/01/2025',
   },
+  {
+    id: 'NR25IN001',
+    fullName: 'Varshini S',
+    designation: 'Intern',
+    department: 'Robotics and Embeded Engineering',
+    status: 'Active',
+    startDate: '05/09/2025',
+  },
+  {
+    id: 'NR25IN002',
+    fullName: 'K M Janya',
+    designation: 'Intern',
+    department: 'Robotics and Embeded Engineering',
+    status: 'Active',
+    startDate: '05/09/2025',
+  },
+  {
+    id: 'NR25EM003',
+    fullName: 'Deekshitha K S',
+    designation: 'Intern',
+    department: 'IOT Engineering',
+    status: 'Active',
+    startDate: '05/09/2025',
+  },
 ];
 
 export async function POST(request: Request) {
